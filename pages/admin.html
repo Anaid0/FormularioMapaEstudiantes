@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/admin.css">
+    <title>Administra Usuarios</title>
+</head>
+<body>
+    <div class="contenedor-usuarios">
+        <button type="button"  onclick="window.location.href = '../index.html';">Volver</button>
+
+        <h2 class="titulo-usuarios">Lista de Usuarios</h2>
+<button onclick="ordenarMenorAMayor()">Ordenar de Menor a Mayor</button>
+<button onclick="ordenarMayorAMenor()">Ordenar de Mayor a Menor</button>
+<table class="usuarios-lista">
+    <thead>
+        <tr>
+            <th>Número de Documento</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Dirección Casa</th>
+            <th>Latitud Casa</th>
+            <th>Longitud Casa</th>
+            <th>Dirección Trabajo</th>
+            <th>Latitud Trabajo</th>
+            <th>Longitud Trabajo</th>
+            <th>Distancia (km)</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody id="usuariosBody">
+        <!-- Aquí se llenarán los datos de los usuarios dinámicamente -->
+    </tbody>
+</table>
+
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>

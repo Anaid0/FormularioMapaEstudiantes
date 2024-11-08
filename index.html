@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mapa.css">
+    <title>Formulario Registro</title>
+</head>
+<body>
+    <div id="formulario">
+        <form id="registroForm" method="POST">
+    <h1>Formulario de Registro</h1>
+    <label for="documento">Número de Documento</label>
+    <input placeholder="Ingrese su Número de documento" type="text" id="documento" name="documento" required>
+    
+    <label for="nombres">Nombres</label>
+    <input placeholder="Ingrese sus nombres" type="text" id="nombres" name="nombres" required>
+    
+    <label for="apellidos">Apellidos</label>
+    <input placeholder="Ingrese sus apellidos" type="text" id="apellidos" name="apellidos" required>
+    
+    <label for="direccionCasa">Dirección Residencia</label>
+    <input placeholder="Ingrese su Dirección" type="text" id="direccionCasa" name="direccionCasa" required>
+
+    <section class="coordenadas">
+        <label for="latitudCasa">Latitud Residencia</label>
+        <input type="number" id="latitudCasa" name="latitudCasa" required>
+    
+        <label for="longitudCasa">Longitud Residencia</label>
+        <input type="number" id="longitudCasa" name="longitudCasa" required>
+    </section>
+
+    <label for="direccionTrabajo">Dirección Trabajo</label>
+    <input placeholder="Ingrese su Dirección" type="text" id="direccionTrabajo" name="direccionTrabajo" required>
+
+    <section class="coordenadas">
+        <label for="latitudTrabajo">Latitud Trabajo</label>
+        <input type="number" id="latitudTrabajo" name="latitudTrabajo" required>
+        
+        <label for="longitudTrabajo">Longitud Trabajo</label>
+        <input type="number" id="longitudTrabajo" name="longitudTrabajo" required>
+    </section>
+   
+    <button type="button" onclick="agregarUsuario()">Guardar Usuario</button>
+    <button type="button" onclick="window.location.href = './pages/admin.html';">Administrar Usuarios</button>
+</form>
+
+        <div id="map"></div>
+    </div>
+
+</body>
+<script src="./js/mapa.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQStlK4ZjCxkSTu2GgY4VJh0gLw7maQoA&callback=iniciarMap&libraries=places,geometry&callback=iniciarMap" async defer></script>
+</html>
