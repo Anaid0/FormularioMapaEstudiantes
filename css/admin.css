@@ -38,3 +38,24 @@
     text-align: center;
 }
 
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    width: auto; 
+    align-self: flex-start; 
+}
+
+#tablaDatos thead th {
+    background-color: #007bff; /* Fondo azul para el encabezado */
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: left;
+    border: 1px solid #ccc;
+}
